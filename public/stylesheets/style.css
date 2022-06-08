@@ -1,24 +1,39 @@
+:root {
+  --primary: #123859;
+  --secondary: #419fd9;
+  --tertiary: #03738c;
+  --quaternary: #8c7503;
+  --quinary: #594b02;
+  --light: #ffffff;
+  --dark: #272f32;
+  --border-radius: 0.3rem;
+}
+
+
 * {
   box-sizing: border-box;
 }
 
 body, html {
   height: 100%;
-  padding: 0;
   margin: 0;
-  font-family: sans-serif;
-  color: #333;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: var(--secondary);
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
-  color: #22a33e;
+  color: var(--tertiary);
   font-weight: bold;
   transition: color .1s;
 }
 
 a:hover {
-  color: #34eb43;
+  color: var(--secondary);
 }
 
 button {
@@ -75,7 +90,7 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,7 +98,7 @@ header {
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 2.25rem;
 }
 
 main {
@@ -92,21 +107,21 @@ main {
 }
 
 .btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+  font-size: 1.3rem;
   text-decoration: none;
-  color: #22a33e;
-  font-size: 100%;
-  font-weight: bold;
-  transition: color .1s;
-  margin-left: 16px;
+  padding: 0.5rem 1.2rem;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  border: none;
+  color: var(--dark);
+  outline: none;
+  background-color: var(--secondary);
 }
 
 .btn-no-style:hover {
-  background: none;
-  color: #34eb43;
+  color: var(--light);
+  background-color: var(--tertiary);
 }
 
 .delete-post-btn {
@@ -170,9 +185,9 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  background-color: var(--primary);
   display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
 }
