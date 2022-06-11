@@ -19,3 +19,5 @@ When the user clicks on the dashboard option in the navigation they are taken to
 The user clicks on the logout option in the navigation and is then signed out of the site. When the user is idle on the site for more than a set time they are able to view comments but they are prompted to log in again before they can add, update, or delete comments.
 
 ## Link to Deployed App in Heroku
+
+https://fast-garden-74894.herokuapp.com/
