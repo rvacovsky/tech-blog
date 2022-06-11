@@ -75,7 +75,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-  // expects {title: 'Taskmaster goes public!', post_text: 'Lorem Ipsum', user_id: 1}
+  // expects {title: 'Check Check, is this thing on?', post_text: 'Lorem Ipsum', user_id: 1}
   Post.create({
     title: req.body.title,
     post_text: req.body.post_text,
@@ -91,7 +91,8 @@ router.post('/', withAuth, (req, res) => {
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
     {
-      title: req.body.title
+      title: req.body.title,
+      post_text: req.body.post_text
     },
     {
       where: {

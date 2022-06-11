@@ -14,13 +14,14 @@
   box-sizing: border-box;
 }
 
-body, html {
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
-  color: var(--secondary);
+  background-color: var(--primary);
+  color: var(--light);
   line-height: 1.5;
   font-size: 16px;
 }
@@ -32,15 +33,11 @@ a {
   transition: color .1s;
 }
 
-a:hover {
-  color: var(--secondary);
-}
-
 button {
   background-color: #22a33e;
   border: 0;
   padding: 1%;
-  color: white;
+  color: var(--light);
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
@@ -59,17 +56,18 @@ button:hover {
 textarea, input {
   padding: .5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--light);
 }
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #34eb43;
+  border: 1px solid var(--quaternary);
 }
 
 textarea {
   min-width: 40%;
   min-height: 100px;
+  background-color: var(--light);
 }
 
 form > div {
@@ -90,7 +88,7 @@ form label {
 }
 
 header {
-  background-color: var(--primary);
+  background-color: var(--quinary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,7 +96,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
 }
 
 main {
@@ -146,15 +144,7 @@ main {
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #0f1f7d;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #136a9c;
+  
 }
 
 .comment-form {
@@ -164,10 +154,13 @@ main {
 .comment {
   padding: 1%;
   margin-bottom: 1%;
+  background-color: var(--quinary);
+  border-radius: 5px;
 }
 
 .comment:nth-child(odd) {
-  background-color: #ebfffc;
+  background-color: var(--quaternary);
+  border-radius: 5px;
 }
 
 .comment .meta {
@@ -186,7 +179,6 @@ main {
 
 footer {
   background-color: var(--primary);
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
